@@ -1,16 +1,19 @@
-﻿using PublicModel;
-using PublicUtility;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace Test
+using PublicUtility;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PublicModel;
+namespace PublicUtility.Tests
 {
-    public class SendCloudMailTest
+    [TestClass()]
+    public class SendCloudTests
     {
-        public static void Test()
+
+        [TestMethod()]
+        public void SendMailTest()
         {
             var apiUser = "xiamenip";
             var apiKey = "vcxHk2Jcquzs4W66";
@@ -24,9 +27,8 @@ namespace Test
             mail.Body = "测试邮件";
 
             var message = SendCloud.SendMail(sendMailUrl, mail);
-            if (!message.Success)
-                throw new Exception(message.Content);
+
+            Assert.IsTrue(message.Success);
         }
-        
     }
 }
