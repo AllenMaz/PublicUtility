@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseModel.cs" />
+    <Compile Include="ClassConvert.cs" />
     <Compile Include="Mail.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="OptionalRequiredAttribute.cs" />

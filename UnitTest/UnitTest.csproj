@@ -53,6 +53,7 @@
     <Compile Include="JsonHandlerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SendCloudTests.cs" />
+    <Compile Include="ClassConvertTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PublicModel\PublicModel.csproj">
